@@ -1,0 +1,215 @@
+Microsoft Windows [Version 10.0.26100.4351]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Work>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 9060-D20E
+
+ Directory of C:\Work
+
+06/25/2025  12:21 PM    <DIR>          .
+06/25/2025  12:20 PM                 0 PC-015.txt
+               1 File(s)              0 bytes
+               1 Dir(s)  848,373,624,832 bytes free
+
+C:\Work>notepad PC-015.txt
+
+C:\Work>type PC-015.txt
+This will contain information about this computer
+
+Second Line
+C:\Work>systeminfo
+
+Host Name:                     A221-PC015
+OS Name:                       Microsoft Windows 11 Pro
+OS Version:                    10.0.26100 N/A Build 26100
+OS Manufacturer:               Microsoft Corporation
+OS Configuration:              Member Workstation
+OS Build Type:                 Multiprocessor Free
+Registered Owner:              Windows user
+Registered Organization:       PEC
+Product ID:                    00331-10000-00001-AA359
+Original Install Date:         3/24/2025, 6:16:19 PM
+System Boot Time:              6/13/2025, 9:02:01 AM
+System Manufacturer:           Dell Inc.
+System Model:                  OptiPlex SFF Plus 7010
+System Type:                   x64-based PC
+Processor(s):                  1 Processor(s) Installed.
+                               [01]: Intel64 Family 6 Model 183 Stepping 1 GenuineIntel ~2100 Mhz
+BIOS Version:                  Dell Inc. 1.23.0, 2/6/2025
+Windows Directory:             C:\Windows
+System Directory:              C:\Windows\system32
+Boot Device:                   \Device\HarddiskVolume1
+System Locale:                 en-us;English (United States)
+Input Locale:                  en-us;English (United States)
+Time Zone:                     (UTC-05:00) Eastern Time (US & Canada)
+Total Physical Memory:         32,457 MB
+Available Physical Memory:     23,889 MB
+Virtual Memory: Max Size:      34,505 MB
+Virtual Memory: Available:     26,332 MB
+Virtual Memory: In Use:        8,173 MB
+Page File Location(s):         C:\pagefile.sys
+Domain:                        networksupport.local
+Logon Server:                  \\SRV01
+Hotfix(s):                     5 Hotfix(s) Installed.
+                               [01]: KB5056579
+                               [02]: KB5048779
+                               [03]: KB5050575
+                               [04]: KB5063060
+                               [05]: KB5059502
+Network Card(s):               2 NIC(s) Installed.
+                               [01]: VirtualBox Host-Only Ethernet Adapter
+                                     Connection Name: Ethernet 2
+                                     DHCP Enabled:    No
+                                     IP address(es)
+                                     [01]: 192.168.56.1
+                                     [02]: fe80::2e0b:ac93:b65a:373c
+                               [02]: Intel(R) Ethernet Connection (17) I219-LM
+                                     Connection Name: Ethernet
+                                     DHCP Enabled:    Yes
+                                     DHCP Server:     192.168.221.1
+                                     IP address(es)
+                                     [01]: 192.168.221.125
+                                     [02]: fe80::7902:36ca:eb2d:5545
+Virtualization-based security: Status: Running
+                               Required Security Properties:
+                                     Base Virtualization Support
+                               Available Security Properties:
+                                     Base Virtualization Support
+                                     Secure Boot
+                                     DMA Protection
+                                     UEFI Code Readonly
+                                     SMM Security Mitigations 1.0
+                                     Mode Based Execution Control
+                                     APIC Virtualization
+                               Services Configured:
+                                     Hypervisor enforced Code Integrity
+                               Services Running:
+                                     Hypervisor enforced Code Integrity
+                                     Hypervisor-Enforced Paging Translation
+                               App Control for Business policy: Enforced
+                               App Control for Business user mode policy: Off
+                               Security Features Enabled:
+Hyper-V Requirements:          A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+
+C:\Work>ipconfig/a
+
+Error: unrecognized or incomplete command line.
+
+USAGE:
+    ipconfig [/allcompartments] [/? | /all |
+                                 /renew [adapter] | /release [adapter] |
+                                 /renew6 [adapter] | /release6 [adapter] |
+                                 /flushdns | /displaydns | /registerdns |
+                                 /showclassid adapter |
+                                 /setclassid adapter [classid] |
+                                 /showclassid6 adapter |
+                                 /setclassid6 adapter [classid] ]
+
+where
+    adapter             Connection name
+                       (wildcard characters * and ? allowed, see examples)
+
+    Options:
+       /?               Display this help message
+       /all             Display full configuration information.
+       /release         Release the IPv4 address for the specified adapter.
+       /release6        Release the IPv6 address for the specified adapter.
+       /renew           Renew the IPv4 address for the specified adapter.
+       /renew6          Renew the IPv6 address for the specified adapter.
+       /flushdns        Purges the DNS Resolver cache.
+       /registerdns     Refreshes all DHCP leases and re-registers DNS names
+       /displaydns      Display the contents of the DNS Resolver Cache.
+       /showclassid     Displays all the dhcp class IDs allowed for adapter.
+       /setclassid      Modifies the dhcp class id.
+       /showclassid6    Displays all the IPv6 DHCP class IDs allowed for adapter.
+       /setclassid6     Modifies the IPv6 DHCP class id.
+
+
+The default is to display only the IP address, subnet mask and
+default gateway for each adapter bound to TCP/IP.
+
+For Release and Renew, if no adapter name is specified, then the IP address
+leases for all adapters bound to TCP/IP will be released or renewed.
+
+For Setclassid and Setclassid6, if no ClassId is specified, then the ClassId is removed.
+
+Examples:
+    > ipconfig                       ... Show information
+    > ipconfig /all                  ... Show detailed information
+    > ipconfig /renew                ... renew all adapters
+    > ipconfig /renew EL*            ... renew any connection that has its
+                                         name starting with EL
+    > ipconfig /release *Con*        ... release all matching connections,
+                                         eg. "Wired Ethernet Connection 1" or
+                                             "Wired Ethernet Connection 2"
+    > ipconfig /allcompartments      ... Show information about all
+                                         compartments
+    > ipconfig /allcompartments /all ... Show detailed information about all
+                                         compartments
+
+C:\Work>ipconfig/all
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : A221-PC015
+   Primary Dns Suffix  . . . . . . . : networksupport.local
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : networksupport.local
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : networksupport.local
+   Description . . . . . . . . . . . : Intel(R) Ethernet Connection (17) I219-LM
+   Physical Address. . . . . . . . . : CC-96-E5-36-9F-D9
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::7902:36ca:eb2d:5545%11(Preferred)
+   IPv4 Address. . . . . . . . . . . : 192.168.221.125(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Thursday, June 19, 2025 12:34:02 PM
+   Lease Expires . . . . . . . . . . : Friday, June 27, 2025 12:36:11 AM
+   Default Gateway . . . . . . . . . : 192.168.221.1
+   DHCP Server . . . . . . . . . . . : 192.168.221.1
+   DHCPv6 IAID . . . . . . . . . . . : 399283941
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2F-73-BB-98-CC-96-E5-36-9F-D9
+   DNS Servers . . . . . . . . . . . : 192.168.2.203
+                                       192.168.2.205
+                                       192.168.2.155
+   Primary WINS Server . . . . . . . : 192.168.2.203
+   Secondary WINS Server . . . . . . : 192.168.2.205
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter Ethernet 2:
+
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+   Physical Address. . . . . . . . . : 0A-00-27-00-00-09
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::2e0b:ac93:b65a:373c%9(Preferred)
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+   DHCPv6 IAID . . . . . . . . . . . : 168427559
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2F-73-BB-98-CC-96-E5-36-9F-D9
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+Ethernet adapter vEthernet (Default Switch):
+
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter
+   Physical Address. . . . . . . . . : 00-15-5D-90-01-00
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::f974:6988:6d2e:b596%21(Preferred)
+   IPv4 Address. . . . . . . . . . . : 172.29.144.1(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.240.0
+   Default Gateway . . . . . . . . . :
+   DHCPv6 IAID . . . . . . . . . . . : 352327005
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2F-73-BB-98-CC-96-E5-36-9F-D9
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+C:\Work>

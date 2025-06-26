@@ -1,3 +1,1 @@
-Created a shortcut for cmd on the desktop
-Created a Work folder on the C Drive
-Edited the cmd shortcut to start in the newly made work folder
+Learned how to create a Shortcut for command prompt that opens in the work directory we made
